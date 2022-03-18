@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/countries
+
+###
+GET http://localhost:8080/country/1
+
+###
+POST http://localhost:8080/country
+Content-Type: application/json
+
+{
+  "codeName": "BE",
+  "name": "Belarus"
+}
+
+###
+PUT http://localhost:8080/country
+Content-Type: application/x-www-form-urlencoded
+
+codeName=RU&newName=Russia
+
+###
+DELETE http://localhost:8080/country/13
